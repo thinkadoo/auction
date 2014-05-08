@@ -1,0 +1,30 @@
+<div class="col-md-12" ng-controller="BuyerListCtrl">
+
+    <div class="jumbotron">
+        <h1>Buyer Module</h1>
+        <p>A place to try out Bootstrap and AngularJS.<p>
+        <p>Clone it and GO!.<p>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Tile</th>
+            <th>Body</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="buyer in buyers">
+            <td>{{ buyer.id }}</td>
+            <td>{{ buyer.title }}</td>
+            <td>{{ buyer.body }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <a href="#/buyer-new" type="button" class="btn btn-default" >New Buyer</a>
+
+</div>
